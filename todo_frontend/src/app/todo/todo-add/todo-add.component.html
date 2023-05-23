@@ -1,0 +1,10 @@
+<div>
+  <form [formGroup]="todoForm" (submit)="onSubmit()">
+    <p>
+      <input class="input" type="text" id="value" name="value" placeholder="Введите задачу" formControlName="value" />
+      <input class="checkbox" type="checkbox"  name="checkbox" formControlName="checkbox" />
+    </p>
+    <button class="btn btn-primary ml-2 mb-2" type="submit">Добавить</button><br />
+  </form>
+  <button class="btn btn-primary" (click)="getAllTodos()">Список задач</button>
+</div>

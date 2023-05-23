@@ -1,0 +1,10 @@
+<div>
+  <h2>Обновление задачи</h2>
+  <form [formGroup]="todoForm">
+    <label for="todo-id">ID:</label>
+    <input id="todo-id" type="text" formControlName="id" [value]="todoId" placeholder="Введите ID задачи" />
+    <label for="todo-text">Текст задачи:</label>
+    <input id="todo-text" type="text" formControlName="text" placeholder="Введите текст" />
+    <button class="btn btn-success" (click)="onSubmit()">Обновить задачу</button>
+  </form>
+</div>
